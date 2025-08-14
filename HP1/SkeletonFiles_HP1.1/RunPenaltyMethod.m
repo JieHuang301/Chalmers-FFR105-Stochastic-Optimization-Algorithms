@@ -11,7 +11,7 @@
 
 % The values below are suggestions - you may experiment with
 % other values of eta and other (increasing) sequences of the
-% µ parameter (muValues).
+% mu parameter (muValues).
 
 
 muValues = [1 10 100 1000];
@@ -24,3 +24,4 @@ for i = 1:length(muValues)
  x = RunGradientDescent(xStart,mu,eta,gradientTolerance);
  sprintf('x(1) = %3f, x(2) = %3f mu = %d',x(1),x(2),mu)
 end
+
